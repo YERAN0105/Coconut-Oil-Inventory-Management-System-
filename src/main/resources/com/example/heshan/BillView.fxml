@@ -49,12 +49,12 @@
          </font>
       </Label>
       <TableView fx:id="billView" layoutX="20.0" layoutY="285.0" prefHeight="214.0" prefWidth="400.0">
-        <columns>
-          <TableColumn fx:id="dateBill" prefWidth="115.20001983642578" text="Date" />
-          <TableColumn fx:id="litres" prefWidth="92.0" text="Latex Litres" />
+         <columns>
+            <TableColumn fx:id="dateBill" prefWidth="115.20001983642578" text="Date" />
+            <TableColumn fx:id="litres" prefWidth="92.0" text="Latex Litres" />
             <TableColumn fx:id="meter" prefWidth="84.79998779296875" text="Meter" />
             <TableColumn fx:id="weight" prefWidth="99.99993896484375" text="Weight" />
-        </columns>
+         </columns>
       </TableView>
       <Label layoutX="228.0" layoutY="511.0" text="Total (Kg)">
          <font>

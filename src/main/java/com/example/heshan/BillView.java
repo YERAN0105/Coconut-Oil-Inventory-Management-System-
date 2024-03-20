@@ -61,16 +61,19 @@ public class BillView implements Initializable {
         for (List<Object> i : billSupplies){
             kgTotal = Double.sum(kgTotal, (Double) i.get(3));
         }
-        totalkg.setText(String.valueOf(kgTotal));
+        String formattedKGTotal = String.format("%.2f", kgTotal);
+        totalkg.setText(formattedKGTotal);
 
         unitPrice.setText(String.valueOf(intInputs.get(0)));
 
         Double rsTotal = kgTotal*intInputs.get(0);
-        totalRs.setText(String.valueOf(rsTotal));
+        String formattedTotal = String.format("%.2f", rsTotal);
+        totalRs.setText(formattedTotal);
 
         advance.setText("("+String.valueOf(intInputs.get(1))+")");
 
         rsTotal = rsTotal-intInputs.get(1);
-        payable.setText(String.valueOf(rsTotal));
+        String formattedTotal1 = String.format("%.2f", rsTotal);
+        payable.setText(formattedTotal1);
     }
 }
