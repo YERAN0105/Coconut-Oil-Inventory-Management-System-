@@ -28,8 +28,11 @@ public class HelloApplication extends Application {
                 lineNum++;
                 line = line.replace("[", "");
                 line = line.replace("]", "");
-                line = line.replace(" ", "");
+                //line = line.replace(" ", "");
                 String[] arrOfStr = line.split(",", 8);
+                for (int i = 1; i < arrOfStr.length; i++){
+                    arrOfStr[i] = arrOfStr[i].replace(" ", "");
+                }
                 if (arrOfStr.length == 5) {
                     List<Object> item = new ArrayList<>();
                     item.add(arrOfStr[0]);
