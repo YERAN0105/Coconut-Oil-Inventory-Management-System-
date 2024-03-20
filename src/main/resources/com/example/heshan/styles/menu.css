@@ -1,0 +1,35 @@
+AnchorPane {
+    -fx-background-color: #080c0f  ;
+    -fx-font-family: "Lexend";
+}
+.label{
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+.button {
+    -fx-background-color: #080c0f  ;
+    -fx-background-radius: 5px;
+    -fx-text-fill: #2C2C2C;
+    -fx-font-family: "Arial";
+    -fx-font-size: 12px;
+    -fx-padding: 8px 16px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.2) , 5,0,0,1 );
+    -fx-text-fill: #bb86fc;
+    -fx-font-weight: bold;
+}
+
+/* Hover effect */
+.button:hover {
+    -fx-background-color:#ffffff  ;
+}
+
+/* Pressed effect */
+.button:pressed {
+    -fx-background-color: #B1B1B1 ;
+}
+
+/* Disabled effect */
+.button:disabled {
+    -fx-opacity: 0.5;
+}

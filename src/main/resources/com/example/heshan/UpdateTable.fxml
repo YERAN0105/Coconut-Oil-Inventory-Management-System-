@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="updateTableAnchor" prefHeight="400.0" prefWidth="600.0" stylesheets="@styles/menu.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.heshan.UpdateTable">
+   <children>
+      <TableView fx:id="updateTableView" layoutX="63.0" layoutY="86.0" prefHeight="200.0" prefWidth="467.0" stylesheets="@styles/table.css">
+        <columns>
+          <TableColumn fx:id="upNumber" prefWidth="76.79998779296875" text="Number" />
+          <TableColumn fx:id="upLitres" prefWidth="96.0" text="Litres" />
+            <TableColumn fx:id="upMeter" prefWidth="98.4000244140625" text="Meter" />
+            <TableColumn fx:id="upWeight" prefWidth="93.5999755859375" text="Weight" />
+            <TableColumn fx:id="Date" prefWidth="100.79997558593749" text="Date" />
+        </columns>
+      </TableView>
+      <Label layoutX="67.0" layoutY="51.0" text="Showing results of " />
+      <Label fx:id="upName" layoutX="178.0" layoutY="51.0" prefHeight="18.0" prefWidth="108.0" />
+      <Label layoutX="359.0" layoutY="52.0" text="Year/Month: " />
+      <Label fx:id="upDate" layoutX="435.0" layoutY="52.0" prefHeight="18.0" prefWidth="73.0" />
+      <Label layoutX="114.0" layoutY="299.0" text="Enter the number to be updated: " />
+      <TextField fx:id="num" layoutX="305.0" layoutY="296.0" prefHeight="26.0" prefWidth="33.0" />
+      <Label fx:id="invalidInput" layoutX="273.0" layoutY="358.0" prefHeight="18.0" prefWidth="70.0" textFill="RED" />
+      <Button layoutX="14.0" layoutY="354.0" mnemonicParsing="false" onAction="#onBackButtonClick" text="Back" />
+      <Button layoutX="527.0" layoutY="354.0" mnemonicParsing="false" onAction="#onNextButtonClick" text="Next" />
+   </children>
+</AnchorPane>

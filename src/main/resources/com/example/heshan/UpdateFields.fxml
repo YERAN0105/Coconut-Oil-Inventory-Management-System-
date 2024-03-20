@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="updateFieldsAnchor" prefHeight="400.0" prefWidth="600.0" stylesheets="@styles/menu.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.heshan.UpdateFields">
+   <children>
+      <Label layoutX="178.0" layoutY="76.0" text="Name: ">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextField fx:id="name" layoutX="233.0" layoutY="72.0" prefHeight="30.0" prefWidth="203.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Label layoutX="178.0" layoutY="127.0" text="Litres: ">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextField fx:id="litres" layoutX="232.0" layoutY="123.0" prefHeight="30.0" prefWidth="203.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Label layoutX="179.0" layoutY="179.0" text="Meter: ">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextField fx:id="meter" layoutX="233.0" layoutY="175.0" prefHeight="30.0" prefWidth="203.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Label layoutX="179.0" layoutY="233.0" text="Date: ">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextField fx:id="date" layoutX="232.0" layoutY="227.0" prefHeight="30.0" prefWidth="203.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Button layoutX="73.0" layoutY="288.0" mnemonicParsing="false" onAction="#onDeleteButttonClick" text="Delete" />
+      <Button layoutX="473.0" layoutY="288.0" mnemonicParsing="false" onAction="#onUpdateButttonClick" text="Update" />
+      <Button layoutX="14.0" layoutY="357.0" mnemonicParsing="false" onAction="#onBackButttonClick" text="Back" />
+      <Button layoutX="520.0" layoutY="357.0" mnemonicParsing="false" onAction="#onMenuButttonClick" text="MENU" />
+      <Label fx:id="invalLtr" layoutX="232.0" layoutY="149.0" prefHeight="18.0" prefWidth="84.0" textFill="RED" />
+      <Label fx:id="invalMtr" layoutX="233.0" layoutY="201.0" prefHeight="18.0" prefWidth="84.0" textFill="RED" />
+      <Label fx:id="FillAllFields" alignment="CENTER" layoutX="228.0" layoutY="363.0" prefHeight="18.0" prefWidth="143.0" textFill="RED" />
+   </children>
+</AnchorPane>
